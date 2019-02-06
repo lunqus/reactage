@@ -23,7 +23,7 @@ class App extends Component {
             <p className="lead">Super simple tool to create trendy videos and pictures <br />  for your ads, social media, blogs and websites.<br />
                 Make your project stand out!</p>
             <p className="lead">
-              <a href="/" className="btn btn-lg btn-secondary">Create Design</a>
+              <a href="/" className="btn btn-lg btn-secondary">Create Design &nbsp;<i className="fas fa-arrow-right"></i></a>
             </p>
           </main>
 
