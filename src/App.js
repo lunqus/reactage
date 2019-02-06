@@ -8,28 +8,29 @@ class App extends Component {
         <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <header className="masthead mb-auto">
             <div className="inner">
-              <h3 className="masthead-brand">Cover</h3>
+              <h3 className="masthead-brand">VIZZY</h3>
               <nav className="nav nav-masthead justify-content-center">
-                <a className="nav-link active" href="#">Home</a>
-                <a className="nav-link" href="#">Features</a>
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link active" href="/">Home</a>
+                <a className="nav-link" href="/">Products</a>
+                <a className="nav-link" href="/">Templates</a>
+                <a className="nav-link" href="/">Pricing</a>
               </nav>
             </div>
           </header>
 
           <main role="main" className="inner cover">
-            <h1 className="cover-heading">Cover your page.</h1>
-            <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download,
-              edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 className="cover-heading">Create Stunning Visual Media</h1>
+            <p className="lead">Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
+                Make your project stand out!</p>
             <p className="lead">
-              <a href="#" className="btn btn-lg btn-secondary">Learn more</a>
+              <a href="/" className="btn btn-lg btn-secondary">Create Design</a>
             </p>
           </main>
 
           <footer className="mastfoot mt-auto">
             <div className="inner">
-              <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
-                  href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Desing Webpage <a href="https://lunkus.com/">Bootstrap & React</a>, by <a
+                  href="https://lunkus.com">LUNKUS</a>.</p>
             </div>
           </footer>
         </div>
