@@ -20,7 +20,7 @@ class App extends Component {
 
           <main role="main" className="inner cover">
             <h1 className="cover-heading">Create Stunning Visual Media</h1>
-            <p className="lead">Super simple tool to create trendy videos and pictures for your ads, social media, blogs and websites.
+            <p className="lead">Super simple tool to create trendy videos and pictures <br />  for your ads, social media, blogs and websites.<br />
                 Make your project stand out!</p>
             <p className="lead">
               <a href="/" className="btn btn-lg btn-secondary">Create Design</a>
@@ -29,7 +29,7 @@ class App extends Component {
 
           <footer className="mastfoot mt-auto">
             <div className="inner">
-              <p>Desing Webpage <a href="https://lunkus.com/">Bootstrap & React</a>, by <a
+              <p>Desing Webpage <a href="https://lunkus.com/">React with Bootstrap 4</a>, by <a
                   href="https://lunkus.com">LUNKUS</a>.</p>
             </div>
           </footer>

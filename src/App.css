@@ -105,3 +105,17 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+.inner p {
+  text-align: left;
+}
+
+p.lead {
+  padding-top: 50px;
+}
+
+.btn-secondary {
+  color: whitesmoke;
+  background-color: red;
+  border: none;
+}
