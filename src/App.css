@@ -119,3 +119,9 @@ p.lead {
   background-color: red;
   border: none;
 }
+
+h1.cover-heading {
+    font-family: "American Typewriter";
+    text-align: left;
+    font-size: 70px;
+}
