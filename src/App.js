@@ -1,39 +1,40 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Home from "./components/Home";
+import Products from "./components/Products";
+import Templates from "./components/Templates";
+import Pricing from "./components/Pricing";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+
 
 class App extends Component {
   render() {
     return (
-        <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-          <header className="masthead mb-auto">
-            <div className="inner">
-              <h3 className="masthead-brand">VIZZY</h3>
-              <nav className="nav nav-masthead justify-content-center">
-                <a className="nav-link active" href="/">Home</a>
-                <a className="nav-link" href="/">Products</a>
-                <a className="nav-link" href="/">Templates</a>
-                <a className="nav-link" href="/">Pricing</a>
-              </nav>
-            </div>
-          </header>
 
-          <main role="main" className="inner cover">
-            <h1 className="cover-heading">Create Stunning Visual Media</h1>
-            <p className="lead">Super simple tool to create trendy videos and pictures <br />  for your ads, social media, blogs and websites.<br />
-                Make your project stand out!</p>
-            <p className="lead">
-              <a href="/" className="btn btn-lg btn-secondary">Create Design &nbsp;<i className="fas fa-arrow-right"></i></a>
-            </p>
-          </main>
+        <BrowserRouter>
 
-          <footer className="mastfoot mt-auto">
-            <div className="inner">
-              <p>Desing Webpage <a href="https://lunkus.com/">React with Bootstrap 4</a>, by <a
-                  href="https://lunkus.com">LUNKUS</a>.</p>
+            <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+                <Navigation />
+
+                <Switch>
+                    <Route path="/" component={Home} exact/>
+                    <Route path="/products" component={Products}/>
+                    <Route path="/templates" component={Templates}/>
+                    <Route path="/pricing" component={Pricing}/>
+                    <Route component={Home}/>
+                </Switch>
+
+                <Footer />
+
             </div>
-          </footer>
-        </div>
+
+        </BrowserRouter>
+
+
     );
   }
 }

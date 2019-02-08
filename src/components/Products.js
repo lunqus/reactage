@@ -3,9 +3,11 @@ import React, {Component} from 'react';
 class Products extends Component {
     render() {
         return (
-            <div>
-                <p>Hello Guys</p>
-            </div>
+
+            <main role="main" className="inner cover">
+                <h1 className="cover-heading">Imagine, Design, Make & Refine</h1>
+            </main>
+
         );
     }
 }
