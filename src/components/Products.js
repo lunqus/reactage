@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
+import ProductsData from "../json/productsData.json";
 
 const Products = () => {
 
     return (
 
         <main role="main" className="inner cover">
-            <h1 className="cover-heading">Imagine, Design, Make & Refine</h1>
+            {ProductsData.map((json, index) => {
+                return <h1 className="cover-heading">{json.h1}</h1>
+            })}
         </main>
 
     );
