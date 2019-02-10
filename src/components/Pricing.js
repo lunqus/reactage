@@ -1,11 +1,15 @@
 import React from "react";
+import PricingData from "../json/priceData.json";
 
 const Pricing = () => {
 
     return (
 
         <main role="main" className="inner cover">
-            <h1 className="cover-heading">A Simple cost evaluator for Product Design</h1>
+            {PricingData.map((json, index) => {
+                return <h1 className="cover-heading">{json.h1}</h1>
+            })}
+
         </main>
 
     );
