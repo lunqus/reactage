@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterData from '../json/footerData.json';
 
 const Footer = () => {
 
@@ -6,8 +7,11 @@ const Footer = () => {
 
         <footer className="mastfoot mt-auto">
             <div className="inner">
-                <p>Desing Webpage <a href="https://lunkus.com/">React with Bootstrap 4</a>, by <a
-                    href="https://lunkus.com">LUNKUS</a>.</p>
+
+                {FooterData.map((json, index) => {
+                    return <p>{json.p} <a href={json.link}>{json.a}</a>, by <a href={json.link}>{json.by}</a>.</p>
+                })}
+
             </div>
         </footer>
 
