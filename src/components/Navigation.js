@@ -1,5 +1,7 @@
 import React from 'react';
+import NavData from '../json/navData.json'
 import {NavLink} from "react-router-dom";
+import FooterData from "../json/footerData";
 
 const Navigation = () => {
 
@@ -11,21 +13,9 @@ const Navigation = () => {
 
                 <nav className="nav nav-masthead justify-content-center">
 
-                    <NavLink to="/">
-                        <a className="nav-link" href="/">Home</a>
-                    </NavLink>
-
-                    <NavLink to="/products">
-                        <a className="nav-link" href="/">Products</a>
-                    </NavLink>
-
-                    <NavLink to="/templates">
-                        <a className="nav-link" href="/">Templates</a>
-                    </NavLink>
-
-                    <NavLink to="/pricing">
-                        <a className="nav-link" href="/">Pricing</a>
-                    </NavLink>
+                    {NavData.map((json, index) => {
+                        return <NavLink to={json.goto}> <a className="nav-link" href="/">{json.meniu}</a> </NavLink>
+                    })}
 
                 </nav>
 

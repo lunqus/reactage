@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "goto": "/",
+    "meniu": "Home"
+  },
+  {
+    "id": 2,
+    "goto": "/products",
+    "meniu": "Products"
+  },
+  {
+    "id": 3,
+    "goto": "/templates",
+    "meniu": "Templates"
+  },
+  {
+    "id": 4,
+    "goto": "/pricing",
+    "meniu": "Pricing"
+  }
+]
