@@ -100,6 +100,7 @@ a.nav-link {
  */
 .cover {
   padding: 0 1.5rem;
+  margin-left: 4rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -131,7 +132,7 @@ p.lead {
 h1.cover-heading {
     font-family: "American Typewriter";
     text-align: left;
-    font-size: 70px;
+    font-size: 65px;
 }
 
 /*PopUp*/
@@ -192,4 +193,23 @@ h1.cover-heading {
   .popup{
     width: 70%;
   }
+}
+
+div.inner.row {
+  width: 1000px;
+  margin-left: 4rem;
+}
+
+.btn {
+  margin: 15px;
+  padding: 10px 20px;
+}
+
+div.buttons {
+  margin-left: 120px;
+
+}
+
+button {
+  text-transform: uppercase;
 }
