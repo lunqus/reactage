@@ -1,11 +1,16 @@
 import React from "react";
+import TemplatesData from "../json/templatesData.json";
 
 const Templates = () => {
 
     return (
 
         <main role="main" className="inner cover">
-            <h1 className="cover-heading">Templates are very useful and show up here in a moment!</h1>
+
+            {TemplatesData.map((json, index) => {
+                return <h1 className="cover-heading">{json.h1}</h1>
+            })}
+
         </main>
 
     );
